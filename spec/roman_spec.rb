@@ -5,9 +5,14 @@ describe 'roman numerals' do
         roman = Roman.new
         expect(roman.convert_to_number("")).to eq(0)
     end
+
+    it 'returns 1 when given "I"' do
+        roman = Roman.new
+        expect(roman.convert_to_number("I")).to eq(1)
+    end
+
+    
+
 end
 
 
-# it 'works' do
-#     fizzbuzz = Fizzbuzz.new
-#     expect(fizzbuzz.execute(1)).to eq(1)

@@ -1,5 +1,9 @@
 class Roman
     def convert_to_number(string)
-        0
+        if string == ""
+            return 0
+        else
+            return 1
+        end
     end
 end
