@@ -11,7 +11,10 @@ describe 'roman numerals' do
         expect(roman.convert_to_number("I")).to eq(1)
     end
 
-    
+    it 'returns 2 when given "II"' do
+        roman = Roman.new
+        expect(roman.convert_to_number("II")).to eq(2)
+    end
 
 end
 
